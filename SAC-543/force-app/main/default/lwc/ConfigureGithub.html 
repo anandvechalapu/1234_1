@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Configuring GitHub</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>Configuring GitHub</h1>
+
+<!-- LWC component to configure GitHub -->
+<c-configure-github></c-configure-github>
+
+<!-- Button to allow user to add more GitHub credentials -->
+<button id="addMoreButton" onclick="addMore()">Add More</button>
+
+<!-- Script to show popup when the user clicks on Add More button -->
+<script type="text/javascript">
+    function addMore(){
+        // Show popup
+        // Popup should contain form to enter the required details
+    }
+</script>
+
+</body>
+</html>
