@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Update</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Institute__c</fullName>
+        <description>This is a custom field for the institute</description>
+        <externalId>false</externalId>
+        <label>Institute</label>
+        <referenceTargetField>Name</referenceTargetField>
+        <referenceTo>Student__c</referenceTo>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>This is a custom field for the status</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </picklistValues>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>LastModifiedDate__c</fullName>
+        <description>This is a custom field for the last modified date</description>
+        <externalId>false</externalId>
+        <label>Last Modified Date</label>
+        <type>DateTime</type>
+    </fields>
+    <label>Institute</label>
+    <nameField>
+        <label>Institute Name</label>
+    </nameField>
+</CustomObject>
